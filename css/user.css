@@ -1,0 +1,43 @@
+:root,
+html[data-theme="light"] {
+    --background-primary: #ffffff;
+    --background-secondary: #ebebeb;
+    --background-terciary: #afafaf;
+
+    --text-color-primary: #000000;
+}
+
+html[data-theme="dark"] {
+    --background-primary: #202020;
+    --background-secondary: #282828;
+    --background-terciary: #1d1d1d;
+
+    --text-color-primary: #afafaf;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-color-primary);
+    /* font-family: '', sans-serif; */ 
+    outline: none;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+html {
+    height: 100vh;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100vh;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--background-primary);
+    transition: background-color 100ms ease-in-out;
+}
